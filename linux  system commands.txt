@@ -1,0 +1,105 @@
+Linux Permissions:
+Authorization:
+1.Ownership
+2.Permission
+
+Three types of owner of linux files:
+1.User(Owner of the file)
+2.Group
+3.Other
+
+
+Permissions:
+1.Read
+2.Write
+3.Execute
+
+Write permission at directory level:
+1.add file
+2.remove file
+3.rename
+
+ls -l
+Command to see the file permissions is ls -l
+first character - represents file
+first charcter  d represents a directory
+
+'-rw-rw-r--'
+'drwxr-xr-x'
+
+r-read
+w-write
+x-execute
+-no permission
+
+
+first part is owner label permission
+2nd part is the group label permission
+3rd part is the other label permission
+
+Changing file permissions:
+chmod
+change mode command
+
+Command use to change permissions is:
+chmod
+
+
+Absolute mode of changing file permission:
+
+chmod 444 filename
+ls -l filename to view the permission
+
+
++ add permission
+- remove permission
+= set permission
+
+u,g,o,all
+
+
+chmod o=rwx sample
+ls -l sample
+
+chmod g+x sample
+ls -l sample
+
+chmod u-r sample
+ls -l sample
+
+
+Changing ownership  chown command
+
+sudo chown user  filename
+sudo chown user:group filename
+
+To  change only the group
+
+sudo chgrp groupname file1
+
+etc/group contain all group defined in the system
+
+etc/group contains all the group defined in the system.
+To see all the groups in the system use groups command
+
+1.chmod
+2.chgrp
+3.chown
+4.groups
+
+Two groups cannot own the same file.
+User Group Other
+Chmod(Absolute mode and Symbolic mode)
+
+
+
+
+
+
+
+
+
+
+
+
+
